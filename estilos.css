@@ -111,6 +111,7 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 20px auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	padding: 20px;
 }
 
 #main-content header,
@@ -164,6 +165,14 @@ tr:nth-child(even) {
 th {
     background-color: #333;
     color: white;
+}
+
+caption { 
+    display: table-caption;
+    text-align: center;
+    background: #333;
+    color: white;
+	font-weight:bold;
 }
 
 
@@ -242,4 +251,21 @@ a:active {
     color: yellow;
     background-color: transparent;
     text-decoration: underline
+}
+
+
+/* Estilos para imagenes */
+
+img {
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+}
+
+
+/* Estilos para div */
+
+.margin-top{
+	margin-top:20px;
 }
