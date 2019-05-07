@@ -7,7 +7,7 @@
     <meta name="Aprendiendo Programacion" content="Una guía para aprender cosicas.">
     <link rel="stylesheet" href="estilos.css">
 </head>
-
+<script src="script.js"></script>
 <body>
 
     <header id="cabecera_principal">
@@ -105,26 +105,26 @@
                     <h2>- Test</h2>
 
                     <h3>Pregunta 1 Bla bla Bla</h3>
-                    <input type="radio" name="p1" value="a" checked required> a) Blabsjhdajkshdj djsahudhakjjdadas
+                    <input type="radio" id="p11" name="p1" value="a" checked required> a) Blabsjhdajkshdj djsahudhakjjdadas
                     <br>
-                    <input type="radio" name="p1" value="b"> b) sjdiuajsdijsiuf djfhsuihfuisdhfjuis djhfuishfuihsf
+                    <input type="radio" id="p12" name="p1" value="b"> b) sjdiuajsdijsiuf djfhsuihfuisdhfjuis djhfuishfuihsf
                     <br>
-                    <input type="radio" name="p1" value="c"> c) jksfjksdfjhsdjf djkfhshfjksd hdfgshhfgdhsfsdf
+                    <input type="radio" id="p13" name="p1" value="c"> c) jksfjksdfjhsdjf djkfhshfjksd hdfgshhfgdhsfsdf
 
                     <h3>Pregunta 2 Bla bla Bla</h3>
                     <label for="Pregunta_2">¿ Tra la ra Tra la ri?</label>
                     <input type="text" id="fname" name="fname" value="Tu Respuesta..." required>
 
                     <h3>Pregunta 3 Bla bla Bla</h3>
-                    <input type="checkbox" name="p3" value="a" required> a) Bla ksjdkjahdj jksdhjakdhjkash jshda
+                    <input type="checkbox" id="p31" value="a" required> a) Bla ksjdkjahdj jksdhjakdhjkash jshda
                     <br>
-                    <input type="checkbox" name="p3" value="b"> b) bla bla bla
+                    <input type="checkbox" id="p32" value="b"> b) bla bla bla
                     <br>
-                    <input type="checkbox" name="p3" value="c"> c) Bla Bla Bla
+                    <input type="checkbox" id="p33" value="c"> c) Bla Bla Bla
                     <br>
 
                     <h3>Pregunta 4 Bla bla Bla</h3>
-                    <select name="p4">
+                    <select id="p4">
                         <option value="a">a) sjkfjkdfhjks</option>
                         <option value="b" selected="true">b) jshdjkahdjkahdjkas</option>
                         <option value="c">c) jksdfjkdfhjkhsfjkhjksfhjkshfjks</option>
@@ -134,7 +134,7 @@
                     <br>
 
                     <h3>Pregunta 5 Bla bla Bla</h3>
-                    <select name="p4" size="4" multiple>
+                    <select id="p5" size="4" multiple>
                         <option value="a">a) sjkdhjksahdjkhajkdhak</option>
                         <option value="b">b) jksdadhjahdsa</option>
                         <option value="c">c) sjkdhjkahdjkahjdhajk</option>
@@ -142,7 +142,7 @@
                         <br>
                         <br>
 
-                        <input type="submit">
+                        <input type="submit" onclick="corregirTest()">
                     </select>
                 </form>
 
