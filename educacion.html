@@ -15,7 +15,8 @@
          <nav>
             <ul>
                <li><a href="#Variables">Variables</a></li>
-			   <li><a href="#Constantes">Constantes</a></li>
+			   <li><a href="#Constantes">Constantes</a></li>			   
+			   <li><a href="#Errores Comunes">Errores Comunes</a></li>
                <li><a href="#Multimedia">Multimedia</a></li>
                <li><a href="autoevaluaci%C3%B3n.html">Autoevaluación</a></li>
             </ul>
@@ -29,128 +30,156 @@
                <h1 id="Variables">Variables</h1>
             </header>
 
-            <div class="content">
-				<h2><br>¿Qúe son las variables?</h2> 
-				<p>Las variables son espacios reservados en la memoria del ordenador.</p>
-				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlMwNhWOcK_WeYjQFkZiGGmAetr_qQjRXw-hg0bsWYHdjMuK6Mg" alt="Modulos de memoria" />
-				<p><br>La memoria por dentro es como un armario con sus divisiones (formadas por baldas, cajones, etc...) donde nosotros metemos y organizamos nuestras cosas, por ejemplo los pantalones, las camisetas, los cinturones, etc. En el caso de la memoria, las divisiones del armario, son las variables en las cuales almacenaremos datos para usarlos en nuestro programa. Cada variable, cada espacio de memoria, tiene un nombre que decidimos nosotros. Es muy útil que el nombre que elijas, tenga que ver con el uso que vas a darle al dato que vas a almacenar.</p>
-				<img src="https://www.clara.es/medio/2018/02/27/ganar-espacio-armario_d99edb5c_600x900.jpg" width="200" height="300" alt="Estantes de un armario" />
-				<img src="Memoria.jpg" align="right" width="500" height="700" alt="Espacios de memoria" />
+					<div class="content">
+						<h2><br>¿Qúe son las variables?</h2> 
+						<p>Las variables son espacios reservados en la memoria del ordenador.</p>
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlMwNhWOcK_WeYjQFkZiGGmAetr_qQjRXw-hg0bsWYHdjMuK6Mg" alt="Modulos de memoria" />
+						<p><br>La memoria por dentro es como un armario con sus divisiones (formadas por baldas, cajones, etc...) donde nosotros metemos y organizamos nuestras cosas, por ejemplo los pantalones, las camisetas, los cinturones, etc. En el caso de la memoria, las divisiones del armario, son las variables en las cuales almacenaremos datos para usarlos en nuestro programa. Cada variable, cada espacio de memoria, tiene un nombre que decidimos nosotros. Es muy útil que el nombre que elijas, tenga que ver con el uso que vas a darle al dato que vas a almacenar.</p>
+						<img src="https://www.clara.es/medio/2018/02/27/ganar-espacio-armario_d99edb5c_600x900.jpg" width="200" height="300" alt="Estantes de un armario" />
+						<img src="Memoria.jpg" align="right" width="500" height="700" alt="Espacios de memoria" />
 
-				<h2><br><br>Tipos de variables</h2> 
-				<p>Si imaginamos las variables como estantes o cajas donde nosotros almacenamos cosas, los tipos de variables tienen que ver con el tamaño de ese estante o caja. No podemos hacer una variable del tamaño que queramos, existen tamaños establecidos. En programación, no es adecuado meter cosas pequeñas en cajas grandes, pues no tiene sentido que ocupe más de lo necesario ya que estaríamos desperdiciando espacio. Obviamente, no podremos meter un dato grande en uns espacio de memoria pequeño, de la misma forma que es imposible que guardes la bici en el cajón de tu mesita de noche.</p>
-				<center>
-				<img src="https://decoracion2.com/opendeco/wp-content/uploads/2012/02/en-fila-1.jpg" width="400" height="200" alt="Sucesión de cajas" />
-				</center>
-				<p><br>Como se puede observar en la siguiente tabla, tenemos los siguientes tipos de variables:</p>
-				
+						<h2><br><br>Tipos de variables</h2> 
+						<p>Si imaginamos las variables como estantes o cajas donde nosotros almacenamos cosas, los tipos de variables tienen que ver con el tamaño de ese estante o caja. No podemos hacer una variable del tamaño que queramos, existen tamaños establecidos. En programación, no es adecuado meter cosas pequeñas en cajas grandes, pues no tiene sentido que ocupe más de lo necesario ya que estaríamos desperdiciando espacio. Obviamente, no podremos meter un dato grande en uns espacio de memoria pequeño, de la misma forma que es imposible que guardes la bici en el cajón de tu mesita de noche.</p>
+						<center>
+						<img src="https://decoracion2.com/opendeco/wp-content/uploads/2012/02/en-fila-1.jpg" width="400" height="200" alt="Sucesión de cajas" />
+						</center>
+						<p><br>Como se puede observar en la siguiente tabla, tenemos los siguientes tipos de variables:</p>
+						
 
-				<table>
-				  <caption>Lista de tipos de variables (Lenguaje Java)</caption>
-				  <tr>
-					<th>Tipo de variable</th>
-					<th>Espacio que ocupa en memoria</th>
-					<th>Valor mínimo</th>
-				    <th>Valor máximo</th>
-				  </tr>
-				  <tr>
-					<td>Boolean</td>
-					<td>8 bits</td>
-					<td>0</td>
-				    <td>1</td>
-				  </tr>
-				  <tr>
-					<td>Char</td>
-					<td>16 Bits</td>
-					<td>'\u0000'</td>
-					<td>'\uffff'</td>
-				  </tr>
-				  <tr>
-					<td>Byte</td>
-					<td>8 Bits</td>
-					<td>-128</td>
-				    <td>-127</td>
-				  </tr>
-				  <tr>
-					<td>Short</td>
-					<td>8 Bits</td>
-					<td>-32.768</td>
-					<td>32.767</td>
-				  </tr>
-				  <tr>
-					<td>Int</td>
-					<td>32 Bits</td>
-					<td>-2.147.483.648</td>
-					<td>2.147.483.647</td>
-				  </tr>
-				  <tr>
-					<td>Long</td>
-					<td>64 Bits</td>
-					<td>-9.223.372.036.854.775.808</td>
-					<td>9.223.372.036.854.775.807</td>
-				  </tr>
-				  <tr>
-					<td>Float</td>
-					<td>32 Bits</td>
-					<td>-3.402823e38</td>
-					<td>3.402823e38</td>
-				  </tr>
-				  <tr>
-					<td>Double</td>
-					<td>64 Bits</td>
-					<td>-1.79769313486232e308</td>
-					<td>-1.79769313486232e308</td>
-				  </tr>
-				</table>
-				
-				<h4>De la tabla anterior, se deduce lo siguiente: </h4>
-			<ul class="lista_desordenada">
-               <li>Si nosotros queremos almacenar una palabra como por ejemplo “hola”, deberemos utilizar una caja que sea del tipo “String”.</li>
-               <li>Si queremos almacenar un número que no sea decimal, utilizaremos una caja del tipo “Int”.</li>
-               <li>Si queremos almacenar un número decimal, como el número PI o la altura de una persona, deberemos utilizar una caja del tipo “Float”.</li>
+						<table>
+						  <caption>Lista de tipos de variables (Lenguaje Java)</caption>
+						  <tr>
+							<th>Tipo de variable</th>
+							<th>Espacio que ocupa en memoria</th>
+							<th>Valor mínimo</th>
+							<th>Valor máximo</th>
+						  </tr>
+						  <tr>
+							<td>Boolean</td>
+							<td>8 bits</td>
+							<td>0</td>
+							<td>1</td>
+						  </tr>
+						  <tr>
+							<td>Char</td>
+							<td>16 Bits</td>
+							<td>'\u0000'</td>
+							<td>'\uffff'</td>
+						  </tr>
+						  <tr>
+							<td>Byte</td>
+							<td>8 Bits</td>
+							<td>-128</td>
+							<td>-127</td>
+						  </tr>
+						  <tr>
+							<td>Short</td>
+							<td>8 Bits</td>
+							<td>-32.768</td>
+							<td>32.767</td>
+						  </tr>
+						  <tr>
+							<td>Int</td>
+							<td>32 Bits</td>
+							<td>-2.147.483.648</td>
+							<td>2.147.483.647</td>
+						  </tr>
+						  <tr>
+							<td>Long</td>
+							<td>64 Bits</td>
+							<td>-9.223.372.036.854.775.808</td>
+							<td>9.223.372.036.854.775.807</td>
+						  </tr>
+						  <tr>
+							<td>Float</td>
+							<td>32 Bits</td>
+							<td>-3.402823e38</td>
+							<td>3.402823e38</td>
+						  </tr>
+						  <tr>
+							<td>Double</td>
+							<td>64 Bits</td>
+							<td>-1.79769313486232e308</td>
+							<td>-1.79769313486232e308</td>
+						  </tr>
+						</table>
+						
+						<h4>De la tabla anterior, se deduce lo siguiente: </h4>
+							<ul class="lista_desordenada">
+							   <li>Si nosotros queremos almacenar una palabra como por ejemplo “hola”, deberemos utilizar una caja que sea del tipo “String”.</li>
+							   <li>Si queremos almacenar un número que no sea decimal, utilizaremos una caja del tipo “Int”.</li>
+							   <li>Si queremos almacenar un número decimal, como el número PI o la altura de una persona, deberemos utilizar una caja del tipo “Float”.</li>
 
-            </ul>
-			
-				<h2><br>Asignación de valor a una variable</h2> 
-				<p>Cuando nosotros asignamos un valor a una variable es como si metieramos una pelota en una caja, o un jersey en un  estante del armario. En realidad lo que almacenamos son datos.</p>
-				<img src="Mi_dato.jpg" width="340" height="300" alt="Mi Dato - Mi Variable" />
-				<img src="Asignacion_datos.jpg" align="right" width="300" height="300" alt="Espacios de memoria" />
+							</ul>
+					
+						<h2><br>Asignación de valor a una variable</h2> 
+						<p>Cuando nosotros asignamos un valor a una variable es como si metieramos una pelota en una caja, o un jersey en un  estante del armario. En realidad lo que almacenamos son datos.</p>
+						<img src="Mi_dato.jpg" width="340" height="300" alt="Mi Dato - Mi Variable" />
+						<img src="Asignacion_datos.jpg" align="right" width="300" height="300" alt="Espacios de memoria" />
 
-				<h2><br><br>Operaciones con variables</h2> 
+						<h2><br><br>Operaciones con variables</h2> 
+						<p>Para explicar de forma comprensible las operaciones con variables, vamos a realizar paso a paso una suma de dos variables con valores enteros. La secuencia ordenada de pasos se muestra a continuación:</p>
+							<ol>
+							   <li>Inicialización de las dos variables de los sumandos (variable1 y variable2).</li>
+							   <li>Asignación de los valores (datos) de los sumandos.</li>
+							   <li>Inicialización de la variable que va a contener el resultado (variable final).</li>
+							   <li>Ejecución de la operación.</li>
+							</ol>
+						
+						<p>El código escrito de cada uno de los pasos anteriores y lo que va sucediendo en la memoria según se va procesando, se podría representar como sigue:</p>
+						<ol>
+						   <li><img src="Suma1.jpg" width="740" height="300" alt="Suma1" /></li>
+						   <li><img src="Suma2.jpg" width="740" height="300" alt="Suma1" /></li>
+						   <li><img src="Suma3.jpg" width="740" height="300" alt="Suma1" /></li>
+						   <li><img src="Suma4.jpg" width="740" height="300" alt="Suma1" /></li>
+						</ol>
+						<p><br><br>Después del último paso, la memoria quedaría así:</p>
+						<center>
+										   <img src="Suma5.jpg" width="640" height="300" alt="Suma1" />
+						</center>
+					</div>
 				
-				<p>Para explicar de forma comprensible las operaciones con variables, vamos a realizar paso a paso una suma de dos variables con valores enteros. La secuencia ordenada de pasos se muestra a continuación:</p>
-				<ol>
-				   <li>Inicialización de las dos variables de los sumandos (variable1 y variable2).</li>
-				   <li>Asignación de los valores (datos) de los sumandos.</li>
-				   <li>Inicialización de la variable que va a contener el resultado (variable final).</li>
-				   <li>Ejecución de la operación.</li>
-				</ol>
-				
-				<p>Lo que va ocurriendo en la memoria, en cada paso de codigo escrito, es lo siguiente:</p>
-				<ol>
-				   <li><img src="Suma1.jpg" width="740" height="300" alt="Suma1" /></li>
-				   <li><img src="Suma2.jpg" width="740" height="300" alt="Suma1" /></li>
-				   <li><img src="Suma3.jpg" width="740" height="300" alt="Suma1" /></li>
-				   <li><img src="Suma4.jpg" width="740" height="300" alt="Suma1" /></li>
-				</ol>
-				<p><br><br>Después del último paso, la memoria quedaría así:</p>
-				<center>
-								   <img src="Suma5.jpg" width="640" height="300" alt="Suma1" />
-				</center>
-				
-
-				
-													
-				</div>
             <header class="margin-top" >
 			   <h1 id="Constantes">Constantes</h1>
+			</header>
+					<div class="content">
+						<h2><br>¿Qúe son las constantes?</h2> 
+						<p>Las constantes son muy similares a las variables, es decir: espacios reservados en la memoria del ordenador, cuyo tamaño elegimos según las características del dato que vayamos a almacenar. Los tipos de constantes definidios en un lenguaje de programación, son iguales a los tipos de variables y para su denominación se utilizan los mismos nombres.</p>
+						<h2><br>Diferencias entre variables y constantes.</h2> 
+						<p>Para explicar la diferencia entre constantes y variables vamos a volver a pensar en los estantes y cajas de un armario. Podemos volver a imaginar una constante como una caja o una división de ese armario, pero con una gran diferencia respecto a la variable: ahora la tapa de la caja tiene una cerradura, o si estamos imaginando un estante, ahora tiene una puerta con llave.</p>
+						<img src="Vitrina.jpg" width="300" height="300" alt="Vitrina" />					
+						<img src="Expositor.jpg" align="right" width="300" height="300" alt="Expositor" />
+						<p>Como vimos en la operación de variables, durante la ejecución del código, una variable podía cambiar su valor. Inicialmente no habíamos asignado ningún valor a la variable ValorFinal. Con la operación de suma conseguíamos asignarle un valor.</p>
+						<P>Con las constantes no se puede hacer esto, el valor de una constante lo definimos cuando declaramos la constante y ya no se podrá modificar durante la ejecución del programa. Podremos "ver" que valor hay dentro, podremos usar ese dato, pero no podremos cambiarlo. Siguiendo con la idea del armario, es como si cerrásemos con llave las puertas de nuestros compartimentos. Cuando declaramos la constante, utilizamos una palabra clave que dependerá del lenguaje de programación (por ejemplo CONS) seguida del nombre del tipo de dato que va a contener y su valor.</p>
+						<P><b>cons int dias_semana = 7; </b></p>
+						<p>Resumiendo, las diferencias principales son:</p>
+						<ul class="lista_desordenada">
+						   <li>Cuando declaramos la constante debemos asignar el valor que va a tener. Esto no es necesario hacerlo con las variables.</li>
+						   <li>Durante la ejecución, no podremos cambiar el valor de una constante. Si que es posible cambiar el valor de una variable.</li>
+						</ul>
+					</div>
+					
+					
+            <header class="margin-top">
+                <h1 id="Errores Comunes">Errores Comunes</h1>
             </header>
-            <img src="http://placekitten.com/800/250" alt="Gatito" />
-            <div class="content margin-top">
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+					<div class="content">
+						<p>Ha continuación se indican los errores más comunes relacionados con el uso de variables y constantes en programación:</p>
+						<h2>Uso de variables sin haber realizado una asignación previa.</h2>
+						<ul class="lista_desordenada">
+							<li>Las variables contienen “basura” cuando las creamos por primera vez, por lo tanto, deberemos inicializar o asignar un valor por primera vez a dicha variable.</li>
+							<li>El uso de una variable sin haber realizado una asignación previa, puede dar lugar a errores que en ocasiones son difíciles de detectar.</li>
+						</ul>
+						<h2>Asignación de un dato en una variable de tipo distinto al dato que queremos almacenar.</h2>
+						<ul class="lista_desordenada">
+							<li>Es necesario tener presente el tipo de nuestras variables. Podremos asignar un tipo de variable pequeña en una grande(en variables numéricas), pero no viceversa. </li>
+							<li>Tampoco se puede asignar a una vsariable de tipo numérico un dato de tipo "string" (texto).</li>
+						</ul>
+		
+					</div>
+					
+					
+
             <header class="margin-top">
                 <h1 id="Multimedia">Multimedia</h1>
             </header>
