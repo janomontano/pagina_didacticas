@@ -9,7 +9,12 @@ body {
     padding-top: 80px;
     /* Relleno superior igual a la altura de la cabecera para que no nos tape el contenido al bloquearla*/
 }
-
+ /* Estilos para nivel de encabezado h1
+- Tamaño y fuente de letra
+- Margen
+- Alineacion
+- Nivel de negrita
+*/
 h1 {
     font-size: 2.3em;
     line-height: 1.3em;
@@ -18,10 +23,16 @@ h1 {
     font-weight: 300;
 }
 
+ /* Estilos para nivel de parrafo p
+- Margen
+*/
 p {
     margin: 0 0 1.5em 0;
 }
-
+ /* Estilos para las imagenes
+- 100 % del ancho
+- alto automatico
+*/
 img {
     max-width: 100%;
     height: auto;
@@ -56,17 +67,29 @@ img {
     padding: 15px 0 0 20px;
     text-decoration: none;
 }
+ /* hover
+hacer que el titulo de la web dentro de la cabecera se ponga azul al psar el raton sobre ella
+*/
 
 #titulo-cabecera:hover {
     color: #0b76a6;
 }
-
+ /* Estilos para el titulo de la cabecera de la web
+- block renderiza como un bloque (como el div)
+- Nivel de negrita
+- tamaño de la fuente
+*/
 #titulo-cabecera .site-name {
     display: block;
     font-weight: 700;
     font-size: 1.2em;
 }
-
+ /* Estilos para el segundo nivel de titulo de la cabecera de la web
+- block renderiza como un bloque (como el div)
+- Nivel de negrita
+- tamaño de la fuente
+- Color de la fuente
+*/
 #titulo-cabecera .site-desc {
     display: block;
     font-weight: 300;
@@ -76,7 +99,8 @@ img {
 
 
 /*
- * Barra de Navegación
+ * Barra de Navegación (prestado)
+- flotante
  */
 
 nav {
@@ -104,7 +128,14 @@ nav ul li a {
 nav ul li a:hover {
     background: #0b76a6;
 }
-
+ /* Estilos para el contenido principal de la web
+- fondo blanco
+- Ancho al 90%
+- Tamaño maximo del ancho 800 pixeles
+- Margenes automaticos a 20 picels
+- Efecto de sombra al frente de 10 pixels
+- El padding genera un espacio en blanco de 20 pixels alrededor del elemento
+*/
 #contenido-principal {
     background: white;
     width: 90%;
@@ -118,7 +149,12 @@ nav ul li a:hover {
 #main-content .content {
     padding: 40px;
 }
-
+ /* Estilos para el pie de pagina de la web
+- fondo
+- color de la letra
+- Alineación
+- padding de 20 pixels y margen superios de  40 pixels
+*/
 #main-footer {
     background: #333;
     color: white;
@@ -145,6 +181,12 @@ nav ul li a:hover {
 
 /*
  * Estilos para la tabla
+- Collapse fusiona los bordes de la tabla
+- Ocupa el 100 % del ancho
+- Alineacion al centro con 8 pixels de padding por celda
+- Colores de fondo para filas
+- Colores de fondo para primera fila de titulo y para su fuente
+-  caption ==> display: table-caption; ==> Añade una fila que hace de titulo de la tabla
  */
 
 table {
@@ -180,6 +222,10 @@ caption {
  * Estilos para los formularios
  */
 
+ /* Entrada de texto
+- redondeo de la caja, pading, margenes y color de fondo...
+*/
+
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -193,7 +239,9 @@ input[type=text] {
 input[type=text]:focus {
     background-color: lightblue;
 }
-
+ /* Selector
+- Ancho, padding, border y color de fondo cuando te posiciones dentro
+*/
 select {
     width: 100%;
     padding: 16px 20px;
@@ -201,7 +249,9 @@ select {
     border-radius: 4px;
     background-color: #f1f1f1;
 }
-
+ /* Botoneras
+- Ancho, padding, border, color de fondo, margenes, icono del cursor
+*/
 input[type=button],
 input[type=submit],
 input[type=reset] {
@@ -216,7 +266,7 @@ input[type=reset] {
 
 
 /*
- * Estilos para las listas
+ * Estilos para las listas ordenadas y desordenadas
  */
 
 ol {
@@ -224,10 +274,24 @@ ol {
     padding: 20px;
 }
 
+.lista_desordenada{
+    
+	
+    background-color: azure;
+
+    padding: 20px;
+}
 
 /*
  * Estilos para Enlaces
+
+- Si se pasa por encima lo subraya
+- Si se encuentra visitado el color de la fuente es rosa
+- Si está activo la fuente es amarillo
+- Si es un link la fuente es verde
  */
+
+
 
 a:link {
     color: green;
@@ -270,10 +334,3 @@ img {
 	margin-top:20px;
 }
 
-.lista_desordenada{
-    
-	
-    background-color: azure;
-
-    padding: 20px;
-}
