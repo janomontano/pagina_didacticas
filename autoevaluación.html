@@ -63,7 +63,7 @@
                                     Pregunta 1
                                 </td>
                                 <td>
-                                    2
+                                    1,5
                                 </td>
                             </tr>
                             <tr>
@@ -71,7 +71,7 @@
                                     Pregunta 2
                                 </td>
                                 <td>
-                                    1
+                                    1,5
                                 </td>
                             </tr>
                             <tr>
@@ -79,7 +79,23 @@
                                     Pregunta 3
                                 </td>
                                 <td>
-                                    3
+                                    2
+                                </td>
+                            </tr>
+                           <tr>
+                                <td>
+                                    Pregunta 4
+                                </td>
+                                <td>
+                                    2
+                                </td>
+                            </tr>
+                           <tr>
+                                <td>
+                                    Pregunta 5
+                                </td>
+                                <td>
+                                    2
                                 </td>
                             </tr>
                             <tr>
@@ -104,41 +120,51 @@
 
                     <h2>- Test</h2>
 
-                    <h3>Pregunta 1 Bla bla Bla</h3>
-                    <input type="radio" id="p11" name="p1" value="a" checked required> a) Blabsjhdajkshdj djsahudhakjjdadas
+                    <h3>Pregunta 1</h3>
+					<label for="Pregunta_1"><b>Selecciona la opción correcta:</b><br></label>
+                    <input type="radio" id="p11" name="p1" value="a" checked required> a) Las constantes y las variables sirven para almacenar datos, pero las primeras contribuyen a que la ejecución de mi programa sea más continua y fluida. 
                     <br>
-                    <input type="radio" id="p12" name="p1" value="b"> b) sjdiuajsdijsiuf djfhsuihfuisdhfjuis djhfuishfuihsf
+                    <input type="radio" id="p12" name="p1" value="b"> b) Las constantes y las variables son lugares de la memoria donde se guardan datos. Las constantes se guardan en la memoria ROM (Read Only Memory) y las variables en la memoria RAM (Random Acces Memory).
                     <br>
-                    <input type="radio" id="p13" name="p1" value="c"> c) jksfjksdfjhsdjf djkfhshfjksd hdfgshhfgdhsfsdf
+                    <input type="radio" id="p13" name="p1" value="c"> c) Las constantes y las variables son espacios reservados de memoria de un tamaño determinado, que tiene ver con el tipo que hayamos utilizado en la declaración.
 
-                    <h3>Pregunta 2 Bla bla Bla</h3>
-                    <label for="Pregunta_2">¿ Tra la ra Tra la ri?</label>
+                    <h3>Pregunta 2</h3>
+                    <label for="Pregunta_2"><b>Escribe a continuación, cómo se denomina el tipo de variable que utilirías para almacenar tu nombre:</b></label>
                     <input type="text" id="fname" name="fname" value="Tu Respuesta..." required>
 
-                    <h3>Pregunta 3 Bla bla Bla</h3>
-                    <input type="checkbox" id="p31" value="a" required> a) Bla ksjdkjahdj jksdhjakdhjkash jshda
+                    <h3>Pregunta 3</h3>
+                    <label for="Pregunta_3"><b>Selecciona los tipos de datos que no puedes utilizar para almacenar el resultado de 2/3:</b><br></label>
+                    <input type="checkbox" id="p31" value="a" required> a) Char
                     <br>
-                    <input type="checkbox" id="p32" value="b"> b) bla bla bla
+                    <input type="checkbox" id="p32" value="b"> b) Long
                     <br>
-                    <input type="checkbox" id="p33" value="c"> c) Bla Bla Bla
+                    <input type="checkbox" id="p33" value="c"> c) Float
+                    <br>
+                    <input type="checkbox" id="p34" value="d"> d) Int
+                    <br>
+                    <input type="checkbox" id="p35" value="e"> e) Double
                     <br>
 
-                    <h3>Pregunta 4 Bla bla Bla</h3>
+                    <h3>Pregunta 4</h3>
+                    <label for="Pregunta_4"><b>Indica que linea de código provocará un error:</b><br></label>
                     <select id="p4">
-                        <option value="a">a) sjkfjkdfhjks</option>
-                        <option value="b" selected="true">b) jshdjkahdjkahdjkas</option>
-                        <option value="c">c) jksdfjkdfhjkhsfjkhjksfhjkshfjks</option>
-                        <option value="audi">Audi</option>
+                        <option value="a">a) cons float paga_semanal = 40;</option>
+                        <option value="b">b) float bocadilloscole, cinesabado, ahorro, paga_mensual;</option>
+                        <option value="c">c) bocadilloscole = 3 * 5;</option>
+                        <option value="d">d) ahorro = paga_semanal - bocadilloscole - cinesabado;</option>
+                        <option value="e">e) paga_mensual = paga_semanal * 4;</option>
+                        <option value="f" selected="true">Selecciona una de las líneas de código.</option>
                     </select>
                     <br>
                     <br>
 
-                    <h3>Pregunta 5 Bla bla Bla</h3>
+                    <h3>Pregunta 5</h3>
+                    <label for="Pregunta_5"><b>Selecciona las dos diferencias principales entre constantes y variables:</b><br></label>					
                     <select id="p5" size="4" multiple>
-                        <option value="a">a) sjkdhjksahdjkhajkdhak</option>
-                        <option value="b">b) jksdadhjahdsa</option>
-                        <option value="c">c) sjkdhjkahdjkahjdhajk</option>
-                        <option value="d">d) ksdkahdklahskdjahjkdhajkAudi</option>
+                        <option value="a">a) Las constantes se utilizan para valores enteros y las variables para valores que contengan decimales.</option>
+                        <option value="b">b) Las constantes no pueden modificar su valor y las variables si.</option>
+                        <option value="c">c) Las variables se pueden asignar después de su declaración y las constantes no.</option>
+                        <option value="d">d) Las variables se pueden asignar antes de su declaración y las constantes justo después.</option>
                         <br>
                         <br>
 
