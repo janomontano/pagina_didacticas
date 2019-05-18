@@ -27,6 +27,19 @@
 
     </header>
     <!-- / #main-header -->
+	
+	<div id="contenedorReloj">
+		<div class="reloj" id="Horas">00</div>
+		<div class="reloj" id="Minutos">:00</div>
+		<div class="reloj" id="Segundos">:00</div>
+		<div class="reloj" id="Centesimas">:00</div>
+		<!--
+		<input type="button" class="botonReloj" id="inicio" value="Start &#9658;" onclick="inicio();">
+		<input type="button" class="botonReloj" id="parar" value="Stop &#8718;" onclick="parar();" disabled>
+		<input type="button" class="botonReloj" id="continuar" value="Resume &#8634;" onclick="inicio();" disabled>
+		<input type="button" class="botonReloj" id="reinicio" value="Reset &#8635;" onclick="reinicio();" disabled>-->
+	</div>
+
 
     <section id="contenido-principal">
         <article>
@@ -109,6 +122,7 @@
                         </tbody>
                     </table>
                 </details>
+				
 
                 <h2>- Datos Personales</h2>
 
@@ -127,14 +141,16 @@
                     <input type="radio" id="p12" name="p1" value="b"> b) Las constantes y las variables son lugares de la memoria donde se guardan datos. Las constantes se guardan en la memoria ROM (Read Only Memory) y las variables en la memoria RAM (Random Acces Memory).
                     <br>
                     <input type="radio" id="p13" name="p1" value="c"> c) Las constantes y las variables son espacios reservados de memoria de un tamaño determinado, que tiene ver con el tipo que hayamos utilizado en la declaración.
-
+					<br>
+					<div class="respuesta" name="respuesta" id="resp1">¡NO SE HA SELECCIONADO NINGUNA RESPUESTA!</div>
                     <h3>Pregunta 2</h3>
                     <label for="Pregunta_2"><b>Escribe a continuación, cómo se denomina el tipo de variable que utilirías para almacenar tu nombre:</b></label>
                     <input type="text" id="p2" name="p2" value="Tu Respuesta..." required>
+					<div class="respuesta" name="respuesta" id="resp2">¡NO SE HA SELECCIONADO NINGUNA RESPUESTA!</div>
 
                     <h3>Pregunta 3</h3>
                     <label for="Pregunta_3"><b>Selecciona los tipos de datos que no puedes utilizar para almacenar el resultado de 2/3:</b><br></label>
-                    <input type="checkbox" id="p31" value="a" required> a) Char
+                    <input type="checkbox" id="p31" value="a" > a) Char
                     <br>
                     <input type="checkbox" id="p32" value="b"> b) Long
                     <br>
@@ -144,6 +160,7 @@
                     <br>
                     <input type="checkbox" id="p35" value="e"> e) Double
                     <br>
+					<div class="respuesta" name="respuesta" id="resp3">¡NO SE HA SELECCIONADO NINGUNA RESPUESTA!</div>
 
                     <h3>Pregunta 4</h3>
                     <label for="Pregunta_4"><b>Indica que linea de código provocará un error:</b><br></label>
@@ -155,22 +172,24 @@
                         <option value="e">e) paga_mensual = paga_semanal * 4;</option>
                         <option value="f" selected="true">Selecciona una de las líneas de código.</option>
                     </select>
-                    <br>
-                    <br>
+					<div class="respuesta" name="respuesta" id="resp4">¡NO SE HA SELECCIONADO NINGUNA RESPUESTA!</div>
 
                     <h3>Pregunta 5</h3>
                     <label for="Pregunta_5"><b>Selecciona las dos diferencias principales entre constantes y variables:</b><br></label>					
-                    <select id="p5" size="4" multiple>
+                    <select id="p5" name="p5" size="4" multiple>
                         <option value="a">a) Las constantes se utilizan para valores enteros y las variables para valores que contengan decimales.</option>
                         <option value="b">b) Las constantes no pueden modificar su valor y las variables si.</option>
                         <option value="c">c) Las variables se pueden asignar después de su declaración y las constantes no.</option>
                         <option value="d">d) Las variables se pueden asignar antes de su declaración y las constantes justo después.</option>
-                        <br>
-                        <br>
-
-                        <input type="submit" onclick="corregirTest()">
                     </select>
+					<div class="respuesta" name="respuesta" id="resp5">¡NO SE HA SELECCIONADO NINGUNA RESPUESTA!</div> 
+					<input type="submit" onclick="corregirTest()">
                 </form>
+				<div class="resultados">
+				<p>Nombre: </p>
+				<p>Apellido: </p>
+				<p>Su nota es: </p>
+				</div>
 
             </div>
 
@@ -186,5 +205,14 @@
     <!-- / #main-footer -->
 
 </body>
-
+<script>
+	//Deseleccionamos todos los radiobutton
+   var ele = document.getElementsByName("p1");
+   for(var i=0;i<ele.length;i++)
+      ele[i].checked = false;
+	//Escondemos los mensajes de error
+	var ele2 = document.getElementsByName("respuesta");
+	   for(var j=0;j<ele2.length;j++)
+		ele2[j].style.display = "none"
+</script>
 </html>
