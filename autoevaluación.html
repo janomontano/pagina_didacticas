@@ -50,7 +50,7 @@
             </header>
 
             <div class="content">
-
+			<div class="resumen">
                 <details>
                     <summary>Para que sirve...</summary>
                     <p>La nota es una estimación, para que el alumnado pueda valorar su aprendizaje en el curso.</p>
@@ -114,16 +114,17 @@
                          </tbody>
                     </table>
                 </details>
-				
+				</div>
 
-                <h2>- Datos Personales</h2>
+					<h2>- Datos Personales</h2>
+					<div class="divpreguntas">
                     <label for="Nombre">Nombre</label>
                     <input type="text" id="fname" name="fname" onfocus="this.value=''" value="Nombre">
                     <label for="lname">Apellidos</label>
                     <input type="text" id="lname" name="lname" onfocus="this.value=''" value="Apellido">
-
+					</div>
                     <h2>- Test</h2>
-
+					<div class="divpreguntas">
                     <h3>Pregunta 1</h3>
 					<label for="Pregunta_1"><b>Selecciona la opción correcta:</b><br></label>
                     <input type="radio" id="p11" name="p1" value="a" > a) Las constantes y las variables sirven para almacenar datos, pero las primeras contribuyen a que la ejecución de mi programa sea más continua y fluida. 
@@ -133,11 +134,14 @@
                     <input type="radio" id="p13" name="p1" value="c"> c) Las constantes y las variables son espacios reservados de memoria de un tamaño determinado, que tiene ver con el tipo que hayamos utilizado en la declaración.
 					<br>
 					<div class="respuesta" name="respuesta" id="resp1">¡NO SE HA SELECCIONADO NINGUNA RESPUESTA!</div>
+					</div>
+					<div class="divpreguntas">
                     <h3>Pregunta 2</h3>
                     <label for="Pregunta_2"><b>Escribe a continuación, cómo se denomina el tipo de variable que utilirías para almacenar tu nombre:</b></label>
                     <input type="text" id="p2" name="p2" onfocus="this.value=''" value="Tu Respuesta..." required>
 					<div class="respuesta" name="respuesta" id="resp2">¡NO SE HA SELECCIONADO NINGUNA RESPUESTA!</div>
-
+					</div>
+					<div class="divpreguntas">
                     <h3>Pregunta 3</h3>
                     <label for="Pregunta_3"><b>Selecciona los tipos de datos que puedes utilizar para almacenar el resultado de 2/3:</b><br></label>
                     <input type="checkbox" id="p31" value="a" > a) Char
@@ -151,7 +155,8 @@
                     <input type="checkbox" id="p35" value="e"> e) Double
                     <br>
 					<div class="respuesta" name="respuesta" id="resp3">¡NO SE HA SELECCIONADO NINGUNA RESPUESTA!</div>
-
+					</div>
+					<div class="divpreguntas">
                     <h3>Pregunta 4</h3>
                     <label for="Pregunta_4"><b>Indica que linea de código provocará un error:</b><br></label>
                     <select id="p4">
@@ -163,7 +168,8 @@
                         <option value="f" selected="true">Selecciona una de las líneas de código.</option>
                     </select>
 					<div class="respuesta" name="respuesta" id="resp4">¡NO SE HA SELECCIONADO NINGUNA RESPUESTA!</div>
-
+					</div>
+					<div class="divpreguntas">
                     <h3>Pregunta 5</h3>
                     <label for="Pregunta_5"><b>Selecciona las dos diferencias principales entre constantes y variables:</b><br></label>					
                     <select id="p5" name="p5" size="4" multiple>
@@ -173,13 +179,14 @@
                         <option value="d">d) Las variables se pueden asignar antes de su declaración y las constantes justo después.</option>
                     </select>
 					<div class="respuesta" name="respuesta" id="resp5">¡NO SE HA SELECCIONADO NINGUNA RESPUESTA!</div> 
+					</div>
 					<input type="submit" onclick="corregirTest()">
                 <div id=resultado> 
-                   <div id=cabresultado> 
+                   <div id=cabresultado > 
                    Calificación Obtenida 
                    </div> 
-                   <div id=cuerporesultado> 
-    . 				<p>Nombre: </p>
+                   <div id=cuerporesultado class="cuerporesultado"> 
+     				<p>Nombre: </p>
 					<p id="resNombre"></p>
                     <p>Apellido: </p>
 					<p id="resApellido"></p>
