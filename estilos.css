@@ -97,7 +97,6 @@ hacer que el titulo de la web dentro de la cabecera se ponga azul al psar el rat
     color: #999;
 }
 
-
 /*
  * Barra de Navegación (prestado)
 - flotante
@@ -343,18 +342,49 @@ img {
     margin-bottom: 10px;
 }
 
+/* Estilos Resultado */
+
+#resultado{ 
+   
+   border: 3px solid grey; 
+   width: auto; 
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+} 
+#cabresultado{ 
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 8px;
+   font-weight: bold; 
+   font-size: 15pt;  
+} 
+#cuerporesultado{ 
+   font-size: 12pt; 
+   padding: 8px; 
+   background-color: #f2f2f2 
+   font-weight: bold;
+}
+
 /* Cronometros */
 *{
 	margin: 0;
 	padding: 0;
 }
 #contenedorReloj{
+    border: 2px solid black;
+    background-color: #f2f2f2 ;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 	position: fixed;
 	margin: 10px auto;
-	height: 115px;
+	height: 45px;
 	margin-top: 35px;
 }
 .reloj{
+    padding: 8px;
 	float: left;
 	font-size: 45px;
 	font-family: Courier,sans-serif;
