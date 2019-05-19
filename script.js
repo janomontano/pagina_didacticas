@@ -40,6 +40,9 @@ function corregirTest(){
 		nota=nota+2;
 	}
 	
+	document.getElementById('resNombre').innerText='Párrafo de texto';
+	document.getElementById('resApellido').innerText='Párrafo de texto';
+	document.getElementById('resNota').innerText=nota;
 	
 	
 	alert("Su nota es:" + nota);

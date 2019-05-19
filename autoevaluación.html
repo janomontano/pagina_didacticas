@@ -125,8 +125,6 @@
 				
 
                 <h2>- Datos Personales</h2>
-
-                <form>
                     <label for="Nombre">Nombre</label>
                     <input type="text" id="fname" name="fname" value="Ernesto">
                     <label for="lname">Apellidos</label>
@@ -184,15 +182,17 @@
                     </select>
 					<div class="respuesta" name="respuesta" id="resp5">¡NO SE HA SELECCIONADO NINGUNA RESPUESTA!</div> 
 					<input type="submit" onclick="corregirTest()">
-                </form>
                 <div id=resultado> 
                    <div id=cabresultado> 
                    Calificación Obtenida 
                    </div> 
                    <div id=cuerporesultado> 
     . 				<p>Nombre: </p>
+					<p id="resNombre"></p>
                     <p>Apellido: </p>
+					<p id="resApellido"></p>
                     <p>Su nota es: </p>
+					<p id="resNota"></p>
                    </div> 
                 </div>
 
