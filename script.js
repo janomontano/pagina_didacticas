@@ -1,3 +1,4 @@
+  /*Esta funcion se utiliza para obtener los valores del select multiple*/
   function getSelectValues(select) {
   var result = [];
   var options = select && select.options;
@@ -12,31 +13,33 @@
   }
   return result;
 }
-
+/* Funcion que se llama cuando pulsamos el boton "enviar" */
 function corregirTest(){
-	debugger;
-	var bandera=validar();
+	var bandera=validar(); //Primero validamos que se han rellenado todos los datos.
 	if(bandera==0){
-	var nota=0;
+	var nota=0;//Empezamos con la nota de 0
 	
 	if(document.getElementById("p13").checked){
-		nota=nota+1.5;
+		nota=nota+1.5; //Si el elemento correcto esta chequeado, entonces sumamos la puntuacion 
 	}
-	
+	//En la pregunta 2 se tiene que introducir una palabra en el input. Si esta palabra coincide con la respuesta esperada, entonces sumamos la puntuacion.
 	if(document.getElementById("p2").value=="String" || document.getElementById("p2").value=="string" || document.getElementById("p2").value=="STRING"){
-		nota=nota+1.5;
+		nota=nota+1.5; 
 	}
+	//En la pregunta 3 se tiene una serie de checkbox. Tiene varias respuestas. Si los elementos de respuesta correcta estan chequeados, entonces sumamos la puntuacion total
 	if(document.getElementById("p33").checked && document.getElementById("p35").checked){
 		nota=nota+2;
-	}else if(document.getElementById("p33").checked || document.getElementById("p35").checked){
+	}else if(document.getElementById("p33").checked || document.getElementById("p35").checked){// En caso de que solo una respuesta sea correcta, sumamos la mitad de la valoracion.
 		nota=nota+1;
 	}
-	
+	//Obtenemos los valores del elemento p4, si coincide con la respuesta, sumamos puntos.
 	var pru=document.getElementById("p4");
 	var val=getSelectValues(pru)
 	if(val[0]=='d'){
 		nota=nota+2;
 	}
+	
+	//Al igual que en el resto, se obtiene las respuestas dadas por el usuario y se comprueban que son las correctas.
 	var prueba=document.getElementById("p5");
 	var valores=getSelectValues(prueba)
 	if(valores[0]=='b' && valores[1]=='c'){
@@ -48,7 +51,9 @@ function corregirTest(){
 		nota = nota +1;
 		}
 
-	parar ();
+	parar ();//Paramos el cronometro
+	
+	/*Rellenamos la calificacion*/
 	document.getElementById('resNombre').innerText=document.getElementById("fname").value;
 	document.getElementById('resApellido').innerText=document.getElementById("lname").value;
 	document.getElementById('resNota').innerText=nota;
@@ -56,14 +61,14 @@ function corregirTest(){
 
 	}
 }
-
+//Esta funcion valida que todos los campos se hayan rellenado. De lo contrario, no se continuara con la correcion del examen.
 function validar(){
 	var bandera=0;
 	if(!document.getElementById("p11").checked && !document.getElementById("p12").checked && !document.getElementById("p13").checked){
-		document.getElementById("resp1").style.display="block";
+		document.getElementById("resp1").style.display="block";//Mostramos el mensaje de error si no esta todo relleno
 		bandera=1;
 	}else{
-		document.getElementById("resp1").style.display="none";
+		document.getElementById("resp1").style.display="none";//Escondemos el mensaje de error si esta todo relleno.
 	}
 	
 	if(document.getElementById("p2").value==""){
@@ -96,7 +101,7 @@ function validar(){
 		document.getElementById("resp5").style.display="none";
 	}
 		
-	
+	//Si todo esta relleno, devolvemos 0, en caso contrario, devolvemos 1. Si devolvemos 1 no se realiza la correcion y se espera que el usuario lo rellene.
 	return bandera;
 		
 		
@@ -104,6 +109,7 @@ function validar(){
 		
 }
 
+//Funciones del contador
 var centesimas = 0;
 var segundos = 0;
 var minutos = 0;
@@ -115,18 +121,7 @@ function parar () {
 	clearInterval(control);
 
 }
-function reinicio () {
-	clearInterval(control);
-	centesimas = 0;
-	segundos = 0;
-	minutos = 0;
-	horas = 0;
-	Centesimas.innerHTML = ":00";
-	Segundos.innerHTML = ":00";
-	Minutos.innerHTML = ":00";
-	Horas.innerHTML = "00";
-	
-}
+
 function cronometro () {
 	if (centesimas < 99) {
 		centesimas++;
