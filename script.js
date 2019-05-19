@@ -1,3 +1,17 @@
+  function getSelectValues(select) {
+  var result = [];
+  var options = select && select.options;
+  var opt;
+
+  for (var i=0, iLen=options.length; i<iLen; i++) {
+    opt = options[i];
+
+    if (opt.selected) {
+      result.push(opt.value || opt.text);
+    }
+  }
+  return result;
+}
 
 function corregirTest(){
 	debugger;
@@ -5,7 +19,7 @@ function corregirTest(){
 	if(bandera==0){
 	var nota=0;
 	
-	if(document.getElementById("p11").checked){
+	if(document.getElementById("p13").checked){
 		nota=nota+1.5;
 	}else{
 		nota=nota-1;
@@ -20,12 +34,13 @@ function corregirTest(){
 		nota=nota+1;
 	}
 	
-	
-	
-	var e = document.getElementById("p4");
-	if(e.selectedIndex==1){
+	var prueba=document.getElementById("p5");
+	var valores=getSelectValues(prueba)
+	if(valores[0]=='b' && valores[1]=='d'){
 		nota=nota+2;
 	}
+	
+	
 	
 	alert("Su nota es:" + nota);
 	}
@@ -62,9 +77,12 @@ function validar(){
 		}else{
 			document.getElementById("resp4").style.display="none";
 		}
-	
-	if (referenceToForm.elements["p5"].selectedIndex == -1) {
 
+	if (document.getElementById("p5").selectedIndex == -1) {
+		document.getElementById("resp5").style.display="block";
+		bandera=1;
+	}else{
+		document.getElementById("resp5").style.display="none";
 	}
 		
 	
