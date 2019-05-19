@@ -39,10 +39,11 @@ function corregirTest(){
 	if(valores[0]=='b' && valores[1]=='d'){
 		nota=nota+2;
 	}
-	
+	parar ();
 	document.getElementById('resNombre').innerText=document.getElementById("fname").value;
 	document.getElementById('resApellido').innerText=document.getElementById("lname").value;
 	document.getElementById('resNota').innerText=nota;
+	document.getElementById('resTiempo').innerText=document.getElementById("Horas").textContent+document.getElementById("Minutos").textContent+document.getElementById("Segundos").textContent+document.getElementById("Centesimas").textContent;
 
 	}
 }
@@ -100,15 +101,10 @@ var minutos = 0;
 var horas = 0;
 function inicio () {
 	control = setInterval(cronometro,10);
-	document.getElementById("inicio").disabled = true;
-	document.getElementById("parar").disabled = false;
-	document.getElementById("continuar").disabled = true;
-	document.getElementById("reinicio").disabled = false;
 }
 function parar () {
 	clearInterval(control);
-	document.getElementById("parar").disabled = true;
-	document.getElementById("continuar").disabled = false;
+
 }
 function reinicio () {
 	clearInterval(control);
@@ -120,10 +116,7 @@ function reinicio () {
 	Segundos.innerHTML = ":00";
 	Minutos.innerHTML = ":00";
 	Horas.innerHTML = "00";
-	document.getElementById("inicio").disabled = false;
-	document.getElementById("parar").disabled = true;
-	document.getElementById("continuar").disabled = true;
-	document.getElementById("reinicio").disabled = true;
+	
 }
 function cronometro () {
 	if (centesimas < 99) {
