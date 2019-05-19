@@ -40,12 +40,10 @@ function corregirTest(){
 		nota=nota+2;
 	}
 	
-	document.getElementById('resNombre').innerText='Párrafo de texto';
-	document.getElementById('resApellido').innerText='Párrafo de texto';
+	document.getElementById('resNombre').innerText=document.getElementById("fname").value;
+	document.getElementById('resApellido').innerText=document.getElementById("lname").value;
 	document.getElementById('resNota').innerText=nota;
-	
-	
-	alert("Su nota es:" + nota);
+
 	}
 }
 
