@@ -21,8 +21,6 @@ function corregirTest(){
 	
 	if(document.getElementById("p13").checked){
 		nota=nota+1.5;
-	}else{
-		nota=nota-1;
 	}
 	
 	if(document.getElementById("p2").value=="String" || document.getElementById("p2").value=="string" || document.getElementById("p2").value=="STRING"){
@@ -34,11 +32,22 @@ function corregirTest(){
 		nota=nota+1;
 	}
 	
-	var prueba=document.getElementById("p5");
-	var valores=getSelectValues(prueba)
-	if(valores[0]=='b' && valores[1]=='d'){
+	var pru=document.getElementById("p4");
+	var val=getSelectValues(pru)
+	if(val[0]=='d'){
 		nota=nota+2;
 	}
+	var prueba=document.getElementById("p5");
+	var valores=getSelectValues(prueba)
+	if(valores[0]=='b' && valores[1]=='c'){
+		nota=nota+2;
+	}else if(valores[0]=='b' || valores[1]=='c'){
+		nota=nota+1;
+		}
+	if (minutos < 1) {
+		nota = nota +1;
+		}
+
 	parar ();
 	document.getElementById('resNombre').innerText=document.getElementById("fname").value;
 	document.getElementById('resApellido').innerText=document.getElementById("lname").value;
