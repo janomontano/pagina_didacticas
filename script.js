@@ -42,11 +42,14 @@ function corregirTest(){
 	//Al igual que en el resto, se obtiene las respuestas dadas por el usuario y se comprueban que son las correctas.
 	var prueba=document.getElementById("p5");
 	var valores=getSelectValues(prueba)
+	if(valores.length==2){
 	if(valores[0]=='b' && valores[1]=='c'){
 		nota=nota+2;
 	}else if(valores[0]=='b' || valores[0]=='c'){
 		nota=nota+1;
 		}
+	}
+
 	if (minutos < 1) {
 		nota = nota +1;
 		}
