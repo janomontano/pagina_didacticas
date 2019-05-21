@@ -44,7 +44,7 @@ function corregirTest(){
 	var valores=getSelectValues(prueba)
 	if(valores[0]=='b' && valores[1]=='c'){
 		nota=nota+2;
-	}else if(valores[0]=='b' || valores[1]=='c'){
+	}else if(valores[0]=='b' || valores[0]=='c'){
 		nota=nota+1;
 		}
 	if (minutos < 1) {
